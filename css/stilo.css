@@ -1,0 +1,257 @@
+.cabecalho {
+    background-color: #f4f4f4; /* Cor de fundo para o cabeçalho */
+    text-align: center; /* Centraliza o texto */
+    padding:0; /* Espaçamento interno */
+    margin: 0; /* Remove margens externas */
+    border-bottom: 2px solid #dddddd; /* Linha decorativa abaixo do cabeçalho */
+}
+
+.cabecalho h1 {
+    color: #333; /* Cor do texto principal */
+    font-size: 2em; /* Tamanho do texto */
+    margin: 0; /* Remove margem externa */
+}
+
+.cabecalho h5 {
+    color: #c70988; /* Cor do subtítulo */
+    font-size: 1em; /* Tamanho do texto do subtítulo */
+    margin: 10px 0; /* Espaçamento entre o título e o subtítulo */
+    padding: 10px;
+}
+
+.menu-navegacao {
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    background-color: #ef681a; /* Cor de fundo da navegação */
+    padding: 0.5px 0; /* Espaçamento interno */
+    margin: 0; /* Remove margem externa */
+}
+
+/*designer da barra de navegação links*/
+.menu-navegacao a {
+    color: white; /* Cor do texto dos links */
+    margin: 0 15px; /* Espaçamento entre os links */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 16px; /* Tamanho do texto */
+    padding: 10px 15px; /* Espaçamento interno dos links */
+}
+
+/*anime ao passar o mouse*/
+.menu-navegacao a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+    background-color:white;
+    color: #c70988;
+}
+
+.menu-navegacao a:focus,
+.menu-navegacao a:active {
+    text-decoration: underline; /* Sublinhado ao clicar no link */
+    color: #ffa500; /* Cor do texto após o clique (exemplo: laranja) */
+    transition: color 0.3s ease; /* Animação suave na troca de cor */
+}
+
+/* Seções */
+/*designer da imagem no corpo da página sobre mim*/
+section {
+    display: flex; /* Ativa o flexbox para alinhar a imagem e o texto */
+    align-items: left; /* Alinha os itens verticalmente no centro */
+    padding: 2rem;
+    margin: 0rem auto;
+}
+
+.imagem-minha {
+    width: 150px; /* Largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 1rem; /* Espaçamento entre a imagem e o texto */
+}
+
+/*designer do texto e espaçamento sobre mim*/
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    color: #c74809;
+}
+#sobre p {
+    margin-bottom: 1rem;
+    
+}
+/*formatação experiência*/
+.formacao-experiencia {
+    display: flex; /* Ativa o flexbox */
+    justify-content: space-between; /* Espaço igual entre as colunas */
+    align-items: flex-start; /* Alinha os itens no topo */
+    gap: 20px; /* Espaçamento entre as colunas */
+    margin: 2rem auto; /* Centraliza a seção na página */
+    max-width: 1200px; /* Limita a largura total */
+}
+
+.formacao,
+.experiencia {
+    flex: 1; /* Cada coluna ocupa o mesmo espaço */
+    padding: 1rem; /* Espaçamento interno */
+     
+}
+
+h1 {
+    font-size: 1.5rem, ; /* Tamanho do título */
+    margin-bottom: 1rem; /* Espaçamento abaixo do título */
+    color: #333; /* Cor do título */
+}
+
+ul {
+    padding-left: 1.5rem; /* Recuo para as listas */
+    color: #555; /* Cor do texto */
+    line-height: 1.6; /* Melhor espaçamento entre linhas */
+}
+
+/* Estilo geral do body */
+body {
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da janela */
+    margin: 0; /* Remove margens padrão do navegador */
+}
+
+/* Estilo geral do portfólio */
+.portfolio {
+    display: flex;
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    gap: 0rem; /* Espaçamento entre os itens */
+    padding: 1rem;
+}
+
+/* Estilo individual dos itens do portfólio */
+.portfolio-item {
+    text-align: center; /* Centraliza o texto */
+    max-width: 300px; /* Limita a largura máxima do item */
+    margin-top: auto;
+    padding: 0%;
+}
+
+.portfolio-icon {
+    width: 64px; /* Define o tamanho do ícone */
+    height: 64px; /*Altura*/
+    margin-bottom: 2rem; /* Espaço entre a imagem e o texto */
+}
+
+.portfolio-item p {
+    font-size: 70%;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo geral do formulário */
+form {
+    max-width: 500px; /* Largura máxima */
+    margin: 2rem auto; /* Centraliza na página */
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    background-color: #deb1b1f5; /* Fundo claro */
+}
+
+/* Estilo para o título Form*/
+form h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Estilo para os rótulos Form*/
+form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    color: #555;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form textarea {
+    width: 90%; /* Garante que o campo não exceda o contêiner */
+    max-width: 100%; /* Impede que exceda o contêiner em layouts responsivos */
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Estilo específico para o campo de mensagem */
+form textarea {
+    resize: vertical; /* Permite redimensionamento apenas vertical */
+    min-height: 100px; /* Define uma altura mínima */
+    max-height: 600px; /* Define uma altura máxima */
+}
+
+
+/* Sombreamento ao focar no campo */
+form input:focus,
+form textarea:focus {
+  
+    box-shadow: 0 4px 8px rgba(224, 74, 5, 0.918); /* Sombra mais intensa */
+    outline: none; /* Remove o outline padrão */
+}
+
+/* Estilo para o botão de enviar */
+form input[type="submit"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #e06410cf; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Estilo do botão ao enviar */
+form input[type="submit"].enviado {
+    background-color: #28a745; /* Cor verde */
+    color: #fff; /* Cor do texto */
+    transform: none; /* Remove transformações */
+    cursor: default; /* Não clicável */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto */
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto; /* Garante que o rodapé fique no final da página */
+}
+
+
+footer {
+    margin-top: auto; /* Empurra o rodapé para a parte inferior */
+    text-align: center; /* Centraliza o texto */
+    background-color: #f1f1f1; /* Cor de fundo opcional */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 14px; /* Ajuste do tamanho da fonte */
+    color: #333; /* Cor do texto */
+}
+
+
+/* Responsividade */
+@media (max-width: 600px) {
+    header nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}
